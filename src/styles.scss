@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$Menu:rgb(206, 148, 245);
+
+body {
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: $Menu;
+  padding: 2%;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a.logo {
+    font-weight: bolder;
+    color: red;
+    font-size: 20px;
+  }
+
+  nav {
+    float: right;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      display: flex;
+
+      li a {
+        padding: 1em;
+
+        &:hover {
+          border-bottom: 2px solid red;
+
+
+        }
+      }
+
+    }
+  }
+
+}
