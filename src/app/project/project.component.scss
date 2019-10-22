@@ -1,0 +1,46 @@
+$Menu:rgb(206, 148, 245);
+
+.conteiner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: $Menu;
+  padding: 1em 0;
+}
+
+nav {
+  float: right;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a.logo {
+  font-weight: bolder;
+  color: red;
+  font-size: 20px;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#buttons .butn {
+
+  border: none;
+  background-color: $Menu;
+  color: #ff3c00;
+  font-size: 18px;
+}
+
+#buttons .butn:focus {
+  color: rgb(0, 0, 0);
+  border: none;
+  border-bottom: 3px solid #ff0000;
+  outline: none;
+}
+
