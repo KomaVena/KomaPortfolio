@@ -23,4 +23,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export class ButtonToggleOverviewExample {}
-
+export const routingComponents = [HomeComponent,AboutComponent,ProjectComponent,AboutComponent,ContactComponent]

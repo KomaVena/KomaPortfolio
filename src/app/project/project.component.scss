@@ -7,16 +7,11 @@ $Menu:rgb(206, 148, 245);
 
 header {
   background: $Menu;
-  padding: 1em 0;
+  padding: 1em ;
 }
 
 nav {
   float: right;
-}
-
-a {
-  color: white;
-  text-decoration: none;
 }
 
 a.logo {
@@ -24,23 +19,24 @@ a.logo {
   color: red;
   font-size: 20px;
 }
+nav {
+  margin-top: 0.5%;
 
-#buttons {
-  text-align: center;
 }
-
-#buttons .butn {
-
-  border: none;
-  background-color: $Menu;
-  color: #ff3c00;
-  font-size: 18px;
-}
-
-#buttons .butn:focus {
+nav a.active {
   color: rgb(0, 0, 0);
   border: none;
-  border-bottom: 3px solid #ff0000;
+  border-bottom: 1px solid #ff0000;
   outline: none;
+  text-decoration: none;
 }
-
+nav a {
+  padding-bottom: 6px;
+  word-spacing: 20px;
+  border: none;
+  background-color: $Menu;
+  color: #bababa;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+}
