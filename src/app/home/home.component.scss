@@ -1,13 +1,12 @@
 .bg {
-  background-image: url(src/assets/img/firstPage.png);
+  background-image: url(src/assets/img/tri4.png);
   background-size: cover;
-  position: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  font-weight: 2000;
+  z-index: auto;
   color: white;
 }
 
@@ -20,16 +19,17 @@
 }
 
 .intro h1 {
-  font-weight: 1200;
-  font-size: 60px;
-  letter-spacing: 1.2px;
+  font-weight: bolder;
+  font-size: 75px;
+  letter-spacing: 1.5px;
+  color: #fef57e;
 }
 
 .start {
   font-family: 'Robot', sans-serif;
   font-size: 16px;
   text-transform: none;
-
+  font-weight: bolder;
 }
 
 nav {
@@ -41,7 +41,7 @@ nav {
 nav a.active {
   color: white;
   border: none;
-  border-bottom: 3px solid #ff0000;
+  border-bottom: 5px solid #ff0000;
   outline: none;
   text-decoration: none;
 
@@ -55,4 +55,5 @@ nav a {
   font-size: 18px;
   padding: 10px;
   text-decoration: none;
+  font-weight: bolder;
 }
