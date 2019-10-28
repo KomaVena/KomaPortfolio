@@ -4,6 +4,15 @@ header {
   margin-right: 15%;
 }
 
+.cont {
+  position: absolut;
+  background: rgba(219, 224, 226, 0.3);
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 100%;
+  height: 35%;
+}
+
 nav a.active {
   color: white;
   border: none;
@@ -24,6 +33,9 @@ nav a {
   text-decoration: none;
   font-weight: bolder;
 }
+nav a:hover {
+  color: white;
+}
 
 .bg {
   background-image: url(src/assets/img/tri4.png);
@@ -40,7 +52,7 @@ nav a {
 .intro {
   text-align: center;
   align-items: center;
-  padding-top: 15%;
+  padding-top: 4%;
   height: 100%;
 
 }
@@ -64,8 +76,8 @@ nav a {
 .kenovadageds {
   bottom: 10%;
   position: fixed;
-  margin-left:10%;
-  margin-bottom:5%;
+  margin-left: 5%;
+  margin-bottom: 1%;
 }
 
 .kenovadaged {
@@ -115,30 +127,37 @@ nav a {
   height: 55px;
   margin: 15px auto 0;
 }
+
 .kenovadaged:nth-last-child(1) {
   -webkit-transition-delay: 25ms;
   transition-delay: 25ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(2) {
   -webkit-transition-delay: 20ms;
   transition-delay: 20ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(3) {
   -webkit-transition-delay: 40ms;
   transition-delay: 40ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(4) {
   -webkit-transition-delay: 60ms;
   transition-delay: 60ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(5) {
   -webkit-transition-delay: 80ms;
   transition-delay: 80ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(6) {
   -webkit-transition-delay: 100ms;
   transition-delay: 100ms;
 }
+
 [tooltip]:before {
   font-family: 'Roboto';
   font-weight: bolder;
@@ -155,6 +174,7 @@ nav a {
   bottom: 18%;
   white-space: nowrap;
 }
+
 [tooltip]:hover:before,
 [tooltip]:hover:after {
   visibility: visible;
