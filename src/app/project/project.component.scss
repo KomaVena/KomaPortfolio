@@ -1,7 +1,55 @@
+.cont {
+  background: rgba(205, 214, 223, 0.3);
+  margin: 0 auto;
+  width: 50%;
+  height: 85%;
+  margin-top: 5.5%;
+  text-align: center;
+}
+
+.AboutMineInfo h1 {
+  color: #fef57e;
+  font-weight: bolder;
+  padding-top: 5%;
+}
+
+.AboutMineInfo p {
+  font-weight: bold;
+}
+
+.AboutMineInfo a {
+  color: #fef57e;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+}
+
+.Two {
+  padding-top: 5%;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header {
   float: right;
-  padding-top: 2.5em;
-  margin-right: 15%;
+  padding-top: 2em;
+  margin-right: 4%;
 }
 
 nav a.active {
@@ -24,6 +72,7 @@ nav a {
   text-decoration: none;
   font-weight: bolder;
 }
+
 nav a:hover {
   color: white;
 }
@@ -47,8 +96,8 @@ nav a:hover {
 .kenovadageds {
   bottom: 10%;
   position: fixed;
-  margin-left:5%;
-  margin-bottom:1%;
+  margin-left: 5%;
+  margin-bottom: 1%;
 }
 
 .kenovadaged {
@@ -98,30 +147,37 @@ nav a:hover {
   height: 55px;
   margin: 15px auto 0;
 }
+
 .kenovadaged:nth-last-child(1) {
   -webkit-transition-delay: 25ms;
   transition-delay: 25ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(2) {
   -webkit-transition-delay: 20ms;
   transition-delay: 20ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(3) {
   -webkit-transition-delay: 40ms;
   transition-delay: 40ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(4) {
   -webkit-transition-delay: 60ms;
   transition-delay: 60ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(5) {
   -webkit-transition-delay: 80ms;
   transition-delay: 80ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(6) {
   -webkit-transition-delay: 100ms;
   transition-delay: 100ms;
 }
+
 [tooltip]:before {
   font-family: 'Roboto';
   font-weight: bolder;
@@ -138,6 +194,7 @@ nav a:hover {
   bottom: 18%;
   white-space: nowrap;
 }
+
 [tooltip]:hover:before,
 [tooltip]:hover:after {
   visibility: visible;

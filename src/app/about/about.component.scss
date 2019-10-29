@@ -11,16 +11,14 @@
   font-weight: bold;
 
 }
-
-.Two {
-  padding-top: 5%;
-  font-weight: bold;
-}
-
 .AboutMineInfo h1 {
   color: #fef57e;
   font-weight: bolder;
   padding-top: 5%;
+}
+.Two {
+  padding-top: 5%;
+  font-weight: bold;
 }
 
 .Two h1 {
@@ -83,8 +81,132 @@
   height: 6px;
 }
 
-//_________________________skill____________________________\\
 
+.line {
+  display: block;
+  box-shadow: 0 0 10px #fef57e;
+}
+
+.line1 {
+  width: 80%;
+  animation: line1 4s;
+}
+
+.line2 {
+  width: 65%;
+  animation: line2 4s;
+}
+
+.line3 {
+  width: 70%;
+  animation: line3 4s;
+}
+
+.line4 {
+  width: 90%;
+  animation: line4 4s;
+}
+
+.line5 {
+  width: 70%;
+  animation: line5 4s;
+}
+
+.line6 {
+  width: 60%;
+  animation: line6 4s;
+}
+@keyframes line1 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width:80%;
+  }
+}
+@keyframes line2 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width:65%;
+  }
+}
+@keyframes line3 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width:70%;
+  }
+}
+@keyframes line4 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width:90%;
+  }
+}
+@keyframes line5 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width:70%;
+  }
+}
+@keyframes line6 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width:60%;
+  }
+}
+//_________________________skill end____________________________\\
+
+
+
+
+//_________________________btn up____________________________\\
+
+
+
+
+
+.topbutton {
+  width:100px;
+  border:2px solid #ccc;
+  background:#f7f7f7;
+  text-align:center;
+  padding:10px;
+  position:fixed;
+  bottom:50px;
+  right:50px;
+  cursor:pointer;
+  color:#333;
+  font-family:verdana;
+  font-size:12px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  }
+
+
+
+
+
+
+
+//_________________________btn end____________________________\\
 
 
 //_________________________header____________________________\\
@@ -92,8 +214,8 @@
 
 header {
   float: right;
-  padding-top: 2.5em;
-  margin-right: 15%;
+  padding-top: 2em;
+  margin-right: 4%;
 }
 
 nav a.active {
@@ -140,7 +262,7 @@ nav a:hover {
 
 #footerMenu {
   text-align: center;
-  padding-top: 3.5%;
+  padding-top: 6%;
 }
 
 
