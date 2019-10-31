@@ -238,11 +238,14 @@ p {
 
 label {
   float: right;
-  margin: 0 20px 0 0;
   font-size: 30px;
   width: 100%;
   color: #fef57e;
   display: none;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 6%;
+  padding-top: 4%;
 }
 
 #toggle {
@@ -275,12 +278,10 @@ label {
 }
 
 //- lable nav smart  
-
-
 @media only screen and (max-width:600px) {
-  .nav {
-    background: rgba(219, 224, 226, 0.3);
-
+  .meimMenu {
+    padding-bottom: 20%;
+    padding-top: 4%;
   }
 
   .nav a.active {
