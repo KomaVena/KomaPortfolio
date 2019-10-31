@@ -1,30 +1,154 @@
+//_______________________nav menu start_______________________\\
+.nav {
+  display: inline;
+  text-align: right;
+  line-height: 70px;
+}
+
+.menu {
+  align-items: flex-end;
+  text-align: right;
+  margin: 0 30px 0 0;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  margin: 0 10px;
+  line-height: 70px;
+
+}
+
+label {
+  float: right;
+  margin: 0 20px 0 0;
+  font-size: 30px;
+  width: 100%;
+  color: #fef57e;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+.nav a {
+  line-height: 70px;
+  border: none;
+  color: #fef57e;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bolder;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+}
+
+.nav a.active {
+  color: white;
+  border: none;
+  border-bottom: 5px solid #ff0000;
+  outline: none;
+  text-decoration: none;
+
+}
+
+.nav a:hover {
+  color: white;
+}
+
+#footerMenu {
+  padding-top: 4%;
+  padding-right: 2%;
+  display: none;
+}
+
+#footerMenu img {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+
+}
+
+//- lable nav smart  
+
+
+@media only screen and (max-width:600px) {
+  .nav {
+    background: rgba(219, 224, 226, 0.3);
+
+  }
+
+  .nav a.active {
+
+    border-bottom: 1px solid #EAEAEB;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    clear: right;
+    margin: 0;
+  }
+
+  #toggle:checked+.menu {
+    display: block;
+  }
+}
+
+
+
+//- lable nav smart  
+
 .cont {
   background: rgba(205, 214, 223, 0.3);
   margin: 0 auto;
   width: 50%;
-  height: 85%;
-  margin-top: 5.5%;
+  margin-top: 3%;
   text-align: center;
+  color: white;
+}
+
+.fon {
+  padding-bottom: 5%;
 }
 
 .AboutMineInfo {
   font-weight: bold;
-
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+
+
 .AboutMineInfo h1 {
+  font-size: 3.5vw;
   color: #fef57e;
   font-weight: bolder;
-  padding-top: 5%;
+
 }
+
 .Two {
-  padding-top: 5%;
   font-weight: bold;
 }
 
 .Two h1 {
   color: #fef57e;
   font-weight: bolder;
-
+  font-size: 3vw;
 }
 
 .Two p {
@@ -36,14 +160,19 @@
   padding-top: 2%;
 }
 
+.work h1 {
+  padding-top: 2%;
+  font-size: 3vw;
+}
+
 //_________________________skill____________________________\\
 
 .center {
-  width: 40%;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 1%;
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 5%;
 }
 
 .skillbox {
@@ -116,151 +245,79 @@
   width: 60%;
   animation: line6 4s;
 }
+
 @keyframes line1 {
   0% {
     width: 0;
   }
 
   100% {
-    width:80%;
+    width: 80%;
   }
 }
+
 @keyframes line2 {
   0% {
     width: 0;
   }
 
   100% {
-    width:65%;
+    width: 65%;
   }
 }
+
 @keyframes line3 {
   0% {
     width: 0;
   }
 
   100% {
-    width:70%;
+    width: 70%;
   }
 }
+
 @keyframes line4 {
   0% {
     width: 0;
   }
 
   100% {
-    width:90%;
+    width: 90%;
   }
 }
+
 @keyframes line5 {
   0% {
     width: 0;
   }
 
   100% {
-    width:70%;
+    width: 70%;
   }
 }
+
 @keyframes line6 {
   0% {
     width: 0;
   }
 
   100% {
-    width:60%;
+    width: 60%;
   }
 }
+
 //_________________________skill end____________________________\\
 
 
 
 
-//_________________________btn up____________________________\\
 
 
 
-//_________________________btn end____________________________\\
 
+//_______________________nav menu end_______________________\\
+//foot menu \\
 
-//_________________________header____________________________\\
-
-
-header {
-  float: right;
-  padding-top: 2em;
-  margin-right: 4%;
-}
-
-nav a.active {
-  color: white;
-  border: none;
-  border-bottom: 5px solid #ff0000;
-  outline: none;
-  text-decoration: none;
-
-}
-
-nav a.active:hover {
-  color: #fef57e;
-}
-
-nav a {
-  word-spacing: 20px;
-  border: none;
-  color: #fef57e;
-  font-size: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 9px;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-nav a:hover {
-  color: white;
-}
-
-.bg {
-  background-image: url(src/assets/img/tri4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  position: absolute;
-  width: 100%;
-  height: 135%;
-  z-index: auto;
-  color: white;
-}
-
-
-#footerMenu {
-  text-align: center;
-  padding-top: 6%;
-}
-
-
-#footerMenu a {
-  border: none;
-  color: white;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-#footerMenu a.active {
-  color: #fef57e;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  text-align: justify;
-}
-
-#footerMenu a:hover {
-  color: #fef57e;
-}
-
-#footerMenu a.active:hover {
-  color: white;
-}
 
 //_________________________icon menu____________________________\\
 
@@ -268,7 +325,7 @@ nav a:hover {
   bottom: 10%;
   position: fixed;
   margin-left: 5%;
-  margin-bottom: 1%;
+
 }
 
 .kenovadaged {
@@ -578,5 +635,48 @@ nav a:hover {
   100% {
     -moz-transform: perspective(136px) rotateY(180deg);
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .cont {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  .kenovadageds {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  .AboutMineInfo h1 {
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  .Two h1 {
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  .work h1 {
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  #footerMenu {
+    display: block;
+    padding-top: 8%;
+    padding-right: 6%;
   }
 }

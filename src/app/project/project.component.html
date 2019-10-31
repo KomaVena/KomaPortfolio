@@ -1,18 +1,18 @@
-<div class="bg">
+<div class="nav">
+  <label for="toggle">&#9776;</label>
+  <input type="checkbox" id="toggle" (click)="toggleCards()">
+  <div class="menu">
+    <a routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+    <a routerLink="/project" routerLinkActive="active">Project</a>
+    <a routerLink="/contact">Contact</a>
+  </div>
+</div>
 
-  <header>
 
-    <nav>
-      <a routerLink="/">Home</a>
-      <a routerLink="/about">About</a>
-      <a routerLink="/project" routerLinkActive="active">Project</a>
-      <a routerLink="/contact">Contact</a>
-    </nav>
 
-  </header>
-
-  <div class="cont">
-
+<div class="cont">
+  <div *ngIf="toggle">
     <div class="AboutMineInfo">
       <h1>My works</h1>
       <p>Here's a selection of some recent work. <br />For more up to the minute work you can visit me on <span><a
@@ -45,107 +45,92 @@
       <a href="https://github.com/KomaVena" class="button">lorem</a>
     </div>
     <div class="cardMein">
-        <div class="flipper">
-          <div class="front">
-            <div class="header">
-              <i class="fa fa-creative-commons fa-2x"></i>
-  
-            </div>
-  
+      <div class="flipper">
+        <div class="front">
+          <div class="header">
+            <i class="fa fa-creative-commons fa-2x"></i>
+
           </div>
-          <div class="back">
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis distinctio provident praesentium
-              beatae reiciendis. </p>
-          </div>
-  
+
         </div>
-  
+        <div class="back">
+          <h3>Lorem, ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis distinctio provident praesentium
+            beatae reiciendis. </p>
+        </div>
+
       </div>
-      <div class="cardText">
-        <h2>Lorem, ipsum.</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Dignissimos sunt debitis alias quod recusandae
-          voluptatem repudiandae, quos enim a delectus.</p>
-        <a href="https://github.com/KomaVena" class="button">lorem</a>
-      </div>
-      <div class="cardMein">
-          <div class="flipper">
-            <div class="front">
-              <div class="header">
-                <i class="fa fa-creative-commons fa-2x"></i>
-    
-              </div>
-    
-            </div>
-            <div class="back">
-              <h3>Lorem, ipsum.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis distinctio provident praesentium
-                beatae reiciendis. </p>
-            </div>
-    
+
+    </div>
+    <div class="cardText">
+      <h2>Lorem, ipsum.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Dignissimos sunt debitis alias quod recusandae
+        voluptatem repudiandae, quos enim a delectus.</p>
+      <a href="https://github.com/KomaVena" class="button">lorem</a>
+    </div>
+    <div class="cardMein">
+      <div class="flipper">
+        <div class="front">
+          <div class="header">
+            <i class="fa fa-creative-commons fa-2x"></i>
+
           </div>
-    
+
         </div>
-        <div class="cardText">
-          <h2>Lorem, ipsum.</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Dignissimos sunt debitis alias quod recusandae
-            voluptatem repudiandae, quos enim a delectus.</p>
-          <a href="https://github.com/KomaVena" class="button">lorem</a>
+        <div class="back">
+          <h3>Lorem, ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis distinctio provident praesentium
+            beatae reiciendis. </p>
         </div>
-        <nav>
-            <div id="footerMenu">
-              <a routerLink="/">Home</a>
-              <a routerLink="/about">About</a>
-              <a routerLink="/project" routerLinkActive="active">Project</a>
-              <a routerLink="/contact">Contact</a>
-            </div>
-          </nav>
+
+      </div>
+
+    </div>
+    <div class="cardText">
+      <h2>Lorem, ipsum.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Dignissimos sunt debitis alias quod recusandae
+        voluptatem repudiandae, quos enim a delectus.</p>
+      <a href="https://github.com/KomaVena" class="button">lorem</a>
+
+    </div>
+    <div id="footerMenu">
+      <a href="https://github.com/KomaVena"><img src="assets/img/github.svg" tooltip="Github"></a>
+      <a href="mailto:n.dovnich@gmail.com?subject="><img src="assets/img/google-plus.svg" tooltip="Gmail"></a>
+      <a href="https://t.me/KomaVe4na"><img src="assets/img/telegram.svg" tooltip="Telegram"></a>
+    </div>
   </div>
+</div>
 
 
+<div class="kenovadageds">
 
+  <a href="https://t.me/KomaVe4na" target="_blank" class="kenovadaged telegram" tooltip="Telegram"><i
+      class="fab fa-google-plus-g"></i>
 
+    <img src="assets/img/telegram.svg" alt="">
 
+  </a>
 
+  <a href="mailto:n.dovnich@gmail.com?subject=" target="_blank" class="kenovadaged gmail" tooltip="Gmail"><i
+      class="fab fa-twitter"></i>
 
+    <img src="assets/img/google-plus.svg" alt="">
 
+  </a>
 
+  <a href="https://github.com/KomaVena" target="_blank" class="kenovadaged github" tooltip="Github"><i
+      class="fab fa-pinterest-p"></i>
 
+    <img src="assets/img/github.svg" alt="">
 
+  </a>
 
+  <a class="kenovadaged mainkenovadaged"><i class="fas fa-share-alt"></i>
 
+    <img src="assets/img/Mein.svg" tooltip="Mein" alt="">
 
+  </a>
 
+</div>
 
-
-
-  <div class="kenovadageds">
-
-    <a href="https://t.me/KomaVe4na" target="_blank" class="kenovadaged telegram" tooltip="Telegram"><i
-        class="fab fa-google-plus-g"></i>
-
-      <img src="assets/img/telegram.svg" alt="">
-
-    </a>
-
-    <a href="mailto:n.dovnich@gmail.com?subject=" target="_blank" class="kenovadaged gmail" tooltip="Gmail"><i
-        class="fab fa-twitter"></i>
-
-      <img src="assets/img/google-plus.svg" alt="">
-
-    </a>
-
-    <a href="https://github.com/KomaVena" target="_blank" class="kenovadaged github" tooltip="Github"><i
-        class="fab fa-pinterest-p"></i>
-
-      <img src="assets/img/github.svg" alt="">
-
-    </a>
-
-    <a class="kenovadaged mainkenovadaged"><i class="fas fa-share-alt"></i>
-
-      <img src="assets/img/Mein.svg" tooltip="Mein" alt="">
-
-    </a>
-
-  </div>
+<div class="fon"></div>

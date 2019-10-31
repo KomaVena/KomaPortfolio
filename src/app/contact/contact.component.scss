@@ -1,10 +1,101 @@
-header {
-  float: right;
-  padding-top: 2em;
-  margin-right: 4%;
+.cont {
+  background: rgba(205, 214, 223, 0.3);
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  margin-top: 3%;
+  text-align: center;
+  color: white;
 }
 
-nav a.active {
+//------------content start-------------------\\
+
+.AboutMineInfo {
+  font-weight: bold;
+
+}
+
+.AboutMineInfo h1 {
+  font-size: 4vw;
+  color: #fef57e;
+  font-weight: bolder;
+  padding-top: 10%;
+  padding-bottom: 4%;
+}
+
+.Message {
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+
+.Message a {
+  color: white;
+  border: 2px solid #fef57e;
+  padding: 10px;
+  text-decoration: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 4px;
+}
+
+.Message a:hover {
+  background-color: rgba(255, 255, 255, 0.335);
+  color: #fef57e;
+
+}
+
+.Email {
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+
+//-------------content end------------------\\
+.nav {
+  display: inline;
+  text-align: right;
+  line-height: 70px;
+}
+
+.menu {
+  align-items: flex-end;
+  text-align: right;
+  margin: 0 30px 0 0;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  margin: 0 10px;
+  line-height: 70px;
+
+}
+
+label {
+  float: right;
+  margin: 0 20px 0 0;
+  font-size: 30px;
+  width: 100%;
+  color: #fef57e;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+.nav a {
+  line-height: 70px;
+  border: none;
+  color: #fef57e;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bolder;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+}
+
+.nav a.active {
   color: white;
   border: none;
   border-bottom: 5px solid #ff0000;
@@ -13,42 +104,64 @@ nav a.active {
 
 }
 
-nav a {
-  word-spacing: 20px;
-  border: none;
-  color: #fef57e;
-  font-size: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 9px;
-  text-decoration: none;
-  font-weight: bolder;
-}
-nav a:hover {
+.nav a:hover {
   color: white;
 }
 
-.bg {
-  background-image: url(src/assets/img/tri4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: auto;
-  color: white;
+//- lable nav smart  
+
+
+@media only screen and (max-width:600px) {
+  .nav {
+    background: rgba(219, 224, 226, 0.3);
+
+  }
+
+  .nav a.active {
+
+    border-bottom: 1px solid #EAEAEB;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    clear: right;
+    margin: 0;
+  }
+
+  #toggle:checked+.menu {
+    display: block;
+  }
 }
 
+@media only screen and (max-width:600px) {
+  .cont {
+    width: 100%;
+  }
+}
 
+//_______________________nav menu end_______________________\\
 
 //_________________________icon menu____________________________\\
 
 .kenovadageds {
   bottom: 10%;
   position: fixed;
-  margin-left:5%;
-  margin-bottom:1%;
+  margin-left: 5%;
+
 }
 
 .kenovadaged {
@@ -98,30 +211,37 @@ nav a:hover {
   height: 55px;
   margin: 15px auto 0;
 }
+
 .kenovadaged:nth-last-child(1) {
   -webkit-transition-delay: 25ms;
   transition-delay: 25ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(2) {
   -webkit-transition-delay: 20ms;
   transition-delay: 20ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(3) {
   -webkit-transition-delay: 40ms;
   transition-delay: 40ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(4) {
   -webkit-transition-delay: 60ms;
   transition-delay: 60ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(5) {
   -webkit-transition-delay: 80ms;
   transition-delay: 80ms;
 }
+
 .kenovadaged:not(:last-child):nth-last-child(6) {
   -webkit-transition-delay: 100ms;
   transition-delay: 100ms;
 }
+
 [tooltip]:before {
   font-family: 'Roboto';
   font-weight: bolder;
@@ -138,8 +258,21 @@ nav a:hover {
   bottom: 18%;
   white-space: nowrap;
 }
+
 [tooltip]:hover:before,
 [tooltip]:hover:after {
   visibility: visible;
   opacity: 1;
+}
+
+@media only screen and (max-width:600px) {
+  .AboutMineInfo h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .kenovadaged {
+    display: none;
+  }
 }

@@ -1,49 +1,58 @@
-<div class="bg">
-
-  <header>
-
-    <nav>
-      <a routerLink="/">Home</a>
-      <a routerLink="/about">About</a>
-      <a routerLink="/project">Project</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
-    </nav>
-
-  </header>
-
-
-
-
-
-  <div class="kenovadageds">
-
-    <a href="https://t.me/KomaVe4na" target="_blank" class="kenovadaged telegram" tooltip="Telegram"><i
-        class="fab fa-google-plus-g"></i>
-
-      <img src="assets/img/telegram.svg" alt="">
-
-    </a>
-
-    <a href="mailto:n.dovnich@gmail.com?subject=" target="_blank" class="kenovadaged gmail" tooltip="Gmail"><i
-        class="fab fa-twitter"></i>
-
-      <img src="assets/img/google-plus.svg" alt="">
-
-    </a>
-
-    <a href="https://github.com/KomaVena" target="_blank" class="kenovadaged github" tooltip="Github"><i
-        class="fab fa-pinterest-p"></i>
-
-      <img src="assets/img/github.svg" alt="">
-
-    </a>
-
-    <a class="kenovadaged mainkenovadaged"><i class="fas fa-share-alt"></i>
-
-      <img src="assets/img/Mein.svg" tooltip="Mein" alt="">
-
-    </a>
-
+<div class="nav">
+  <label for="toggle">&#9776;</label>
+  <input type="checkbox" id="toggle" (click)="toggleCards()">
+  <div class="menu">
+    <a routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+    <a routerLink="/project">Project</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
   </div>
+</div>
+<div *ngIf="toggle">
+  <div class="cont">
+    <div class="AboutMineInfo">
+
+      <h1>Contact Me </h1>
+      <p>If you are interested in working with me,<br />
+        please feel free to contact me and just say hi, then get in
+        touch.
+      </p>
+      <div class="Message">
+        <a href="mailto:n.dovnich@gmail.com?subject=">Message me</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="kenovadageds">
+
+  <a href="https://t.me/KomaVe4na" target="_blank" class="kenovadaged telegram" tooltip="Telegram"><i
+      class="fab fa-google-plus-g"></i>
+
+    <img src="assets/img/telegram.svg" alt="">
+
+  </a>
+
+  <a href="mailto:n.dovnich@gmail.com?subject=" target="_blank" class="kenovadaged gmail" tooltip="Gmail"><i
+      class="fab fa-twitter"></i>
+
+    <img src="assets/img/google-plus.svg" alt="">
+
+  </a>
+
+  <a href="https://github.com/KomaVena" target="_blank" class="kenovadaged github" tooltip="Github"><i
+      class="fab fa-pinterest-p"></i>
+
+    <img src="assets/img/github.svg" alt="">
+
+  </a>
+
+  <a class="kenovadaged mainkenovadaged"><i class="fas fa-share-alt"></i>
+
+    <img src="assets/img/Mein.svg" tooltip="Mein" alt="">
+
+  </a>
 
 </div>
