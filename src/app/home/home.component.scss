@@ -158,7 +158,7 @@ label {
 .start {
   text-transform: none;
   font-weight: bolder;
-
+  font-size: 18px;
 }
 
 //_________________________content end____________________________\\
@@ -189,6 +189,11 @@ label {
   -webkit-transition: all .1s ease-out;
   transition: all .1s ease-out;
   position: relative;
+}
+
+.kenovadaged img {
+  width: 80px;
+  height: 80px;
 }
 
 .kenovadaged>i {

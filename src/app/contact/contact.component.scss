@@ -6,7 +6,9 @@
   margin-top: 3%;
   text-align: center;
   color: white;
+  font-size: 18px;
 }
+
 
 //------------content start-------------------\\
 
@@ -135,7 +137,6 @@ label {
     text-align: center;
     width: 100%;
     display: none;
-
   }
 
   .menu a {
@@ -143,6 +144,7 @@ label {
     border-bottom: 1px solid #EAEAEB;
     clear: right;
     margin: 0;
+    font-size: 18px;
   }
 
   #toggle:checked+.menu {
@@ -168,7 +170,8 @@ label {
 }
 
 .kenovadaged {
-  display: block;
+  display: none;
+  // display: block;
   width: 55px;
   height: 55px;
   border-radius: 100%;
@@ -181,7 +184,10 @@ label {
   transition: all .1s ease-out;
   position: relative;
 }
-
+.kenovadaged img {
+  width: 80px;
+  height: 80px;
+}
 .kenovadaged>i {
   font-size: 28px;
   line-height: 55px;

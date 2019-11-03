@@ -124,6 +124,7 @@ label {
   margin-top: 3%;
   text-align: center;
   color: white;
+  font-size: 18px;
 }
 
 .fon {
@@ -344,6 +345,10 @@ label {
   -webkit-transition: all .1s ease-out;
   transition: all .1s ease-out;
   position: relative;
+}
+.kenovadaged img {
+  width: 80px;
+  height: 80px;
 }
 
 .kenovadaged>i {

@@ -6,7 +6,10 @@
   padding-bottom: 3%;
   text-align: center;
   color: white;
+  font-size: 18px;
 }
+
+
 
 .fon {
   padding-bottom: 5%;
@@ -18,11 +21,14 @@
   padding-top: 5%;
 }
 
+
 .AboutMineInfo p {
   font-weight: bold;
+  font-size: 18px;
 }
 
 .AboutMineInfo a {
+  font-size: 18px;
   color: #fef57e;
   text-decoration: none;
   border-bottom: 3px solid white;
@@ -78,6 +84,7 @@
 }
 
 .cardMein {
+  font-size: 18px;
   padding-top: 4%;
   text-align: center;
   height: 20%;
@@ -341,7 +348,10 @@ label {
   transition: all .1s ease-out;
   position: relative;
 }
-
+.kenovadaged img {
+  width: 80px;
+  height: 80px;
+}
 .kenovadaged>i {
   font-size: 28px;
   line-height: 55px;
