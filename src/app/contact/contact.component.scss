@@ -81,7 +81,7 @@ label {
   align-items: flex-end;
   text-align: right;
   padding-right: 6%;
-  padding-top: 4%;
+  padding-top: 5%;
 }
 
 #toggle {
@@ -118,7 +118,7 @@ label {
 
 @media only screen and (max-width:600px) {
   .meimMenu {
-    padding-bottom: 20%;
+    padding-bottom: 23.5%;
     padding-top: 4%;
   }
 
@@ -184,10 +184,12 @@ label {
   transition: all .1s ease-out;
   position: relative;
 }
+
 .kenovadaged img {
   width: 80px;
   height: 80px;
 }
+
 .kenovadaged>i {
   font-size: 28px;
   line-height: 55px;
@@ -283,5 +285,11 @@ label {
 @media only screen and (max-width:600px) {
   .kenovadaged {
     display: none;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .cont {
+    font-weight: bolder;
   }
 }
